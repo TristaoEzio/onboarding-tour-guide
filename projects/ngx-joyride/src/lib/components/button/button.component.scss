@@ -1,16 +1,17 @@
 .joyride-button {
     text-transform: uppercase;
     border: 2px solid transparent;
+    border-radius: 60px;
     outline: none;
     padding: 6px 12px;
     font-size: 12px;
     font-weight: bold;
     color: white;
-    background-color: #3b5560;
+    background-color: #4A748B;
     cursor: pointer;
     &:hover {
-        color: #3b5560;
-        border: 2px solid #3b5560;
+        color: #4A748B;
+        border: 2px solid #4A748B;
         background-color: white;
     }
 }

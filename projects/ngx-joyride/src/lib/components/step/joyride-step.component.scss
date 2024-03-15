@@ -19,7 +19,8 @@
         flex-direction: column;
         justify-content: space-between;
         padding: 10px;
-        box-shadow: 0px 0px 30px 1px #000000;
+        box-shadow: 0px 0px 10px 1px #606060;
+        border-radius: 6px;
     }
     &__header {
         display: flex;

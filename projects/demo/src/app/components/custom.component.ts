@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
         <div>
             <h1>Title</h1>
             <div>Simple description</div>
-            <img src="assets/images/angular.png" />
+            <img src="assets/images/undraw.png" />
             <h3>Subtitle 1</h3>
             <h3>Subtitle 2</h3>
         </div>

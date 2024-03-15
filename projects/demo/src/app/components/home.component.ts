@@ -4,14 +4,14 @@ import { JoyrideService } from 'ngx-joyride';
 @Component({
     selector: 'home',
     templateUrl: './home.component.html',
-    styleUrls: ['./home.component.scss']
+    styleUrls: ['./home.component.scss'],
 })
 export class HomeComponent implements AfterViewInit, OnInit {
     stepVisible = false;
 
     topics = [] as any;
 
-    title = 'ngx-joyride library demo';
+    title = 'Onboarding Tour Guide demo';
 
     dynamicTitle = 'Title';
     constructor(private readonly joyrideService: JoyrideService) {}
@@ -22,7 +22,7 @@ export class HomeComponent implements AfterViewInit, OnInit {
         for (let i = 0; i < 100; i++) {
             this.topics.push({
                 name: 'element' + i,
-                description: 'Element in a scrollable list.'
+                description: 'Element in a scrollable list.',
             });
         }
         setTimeout(() => {
@@ -58,21 +58,21 @@ export class HomeComponent implements AfterViewInit, OnInit {
                 'home2@app',
                 'stepHidden@app',
                 'step3@app',
-                'step2@about/you'
+                'step2@about/you',
             ],
             // startWith: 'step3@app',
             // waitingTime: 3000,
             stepDefaultPosition: 'top',
-            themeColor: '#345632',
+            themeColor: '#282B35',
             showPrevButton: true,
-            logsEnabled: false
+            logsEnabled: false,
             // customTexts: { prev: of('<<').pipe(delay(2000)), next: '>>'}
         };
         this.joyrideService.startTour(options).subscribe(
-            step => {
+            (step) => {
                 console.log('Next:', step);
             },
-            e => {
+            (e) => {
                 console.log('Error', e);
             },
             () => {
